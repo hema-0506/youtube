@@ -1,0 +1,83 @@
+.page-layout{
+    display: grid;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media (max-width:800px){
+    .page-layout{
+        grid-template-columns: 1fr 1fr;
+}
+}
+@media (min-width:801px) and (max-width:1199px){
+    .page-layout{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1200px){
+    .page-layout{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.tn1{
+    width:100%;  
+    display: block;
+    border-radius: 5px;
+    margin-bottom:8px;
+}
+.video-title1{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+@media(min-width:1000px){
+    .video-title1{
+        font-size:16px;
+        line-height: 24px;
+    }
+}
+.video-author1,.video-stats1{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color:rgb(96,96,96);
+}
+@media(min-width:1000px){
+    .video-author1, .video-stats1{
+        font-size: 14px;
+    }
+}
+.video-info{
+    padding-left: 10px;
+    display: inline-block;
+}
+.video1{
+    display:inline-block;
+    vertical-align: top;
+    margin-right:20px; 
+}
+.channel1{
+width: 100%;
+border-radius: 50px;
+border-style: solid;
+}
+.video-info-grid{
+display: grid;
+grid-template-columns: 36px 1fr;
+}
+
+.thumbnails{
+    position: relative;
+}
+/* position absolute will come inside relative*/
+.time{
+    position: absolute;
+    font-weight: 550;
+    font-size: 12px;
+    background-color: black;
+    color:white;
+    bottom:8px;
+    right: 5px;
+    border-radius:2px;
+    padding: 4px;
+}
